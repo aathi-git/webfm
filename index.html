@@ -1,13 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Your Online FM Station</title>
+    <title>Tharun - FM Station</title>
+    <style>
+        body {
+            background: linear-gradient(90deg, #000, #000, #072b7a, #ffd700);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            text-align: center;
+            padding: 100px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        .audio-player {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #000;
+            color: #fff;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+    </style>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Welcome to Your Online FM Station</h1>
-    <audio controls>
-        <source src="https://daf7-60-243-75-103.ngrok-free.app/stream1" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+    <div class="container">
+        <h1>Welcome to Tharun - FM Station</h1>
+        <div class="audio-player mt-3">
+            <audio controls>
+                <source src="https://daf7-60-243-75-103.ngrok-free.app/stream1" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS (for audio controls) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <footer>
+        Created by <a href="https://www.instagram.com/whitehat.mr/" target="_blank">WHM</a>
+    </footer>
 </body>
 </html>
