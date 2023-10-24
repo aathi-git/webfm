@@ -1,65 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Tharun - FM Station</title>
-    <style>
-        body {
-            background: linear-gradient(90deg, #000, #000, #072b7a, #ffd700);
-            color: #fff;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            text-align: center;
-            padding: 100px;
-        }
-
-        h1 {
-            font-size: 36px;
-        }
-
-        .audio-player {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        footer {
-            background: #000;
-            color: #fff;
-            padding: 10px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-
-        footer a {
-            color: #ffd700;
-            text-decoration: none;
-        }
-    </style>
-    <!-- Include Bootstrap CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <!-- Add Bootstrap CSS link -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add FontAwesome CSS link (You may use a CDN or a local link) -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <!-- Custom CSS for the page -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Google Fonts link for "Creative Thoughts" font -->
+    <link href="https://fonts.googleapis.com/css2?family=Creative+Thoughts&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="container">
-        <h1>Welcome to Tharun - FM Station</h1>
-        <div class="audio-player mt-3">
-            <audio controls>
-                <source src="https://3e02-60-243-75-103.ngrok-free.app/stream1" type="audio/mpeg">
+<body class="neon-theme">
+    <div class="video-container">
+        <video autoplay loop muted class="background-video">
+            <source src="bgvideo.mp4" type="video/mp4">
+        </video>
+        <div class="logo-image">
+            <img href="https://bit.ly/whm_info" src="logo.png" alt="Your Logo">
+        </div>
+        <div class="audio-button">
+            <audio controls class="audio-player" src="https://3e02-60-243-75-103.ngrok-free.app/stream1" preload="none" volume="0.25">
                 Your browser does not support the audio element.
             </audio>
         </div>
     </div>
 
-    <!-- Include Bootstrap JS (for audio controls) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <footer>
-        Created by <a href="https://www.instagram.com/whitehat.mr/" target="_blank">WHM</a>
-    </footer>
+    <!--footer section-->
+    <div class="footer-text">Crafted by <a href="https://www.instagram.com/whitehat.mr" target="_blank" class="footer-link">@whitehat.mr</a> | Powered by <a href="https://www.instagram.com/whitehat.mr" target="_blank" class="footer-link">WHM</a><br></div>
+
+
+
+    <!-- Add Bootstrap JS and Popper.js for Bootstrap features -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Your custom JavaScript can go here -->
 </body>
 </html>
