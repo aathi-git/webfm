@@ -1,1 +1,1 @@
-web: node your-server-file.js
+web: node updates/node.js
