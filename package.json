@@ -1,3 +1,13 @@
-"scripts": {
-  "start": "node updates/node.js"
+{
+  "name": "livechatwebfm",
+  "version": "1.0.0",
+  "description": "Description of your app",
+  "main": "updates/node.js",
+  "scripts": {
+    "start": "node updates/node.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+    // Other dependencies...
+  }
 }
