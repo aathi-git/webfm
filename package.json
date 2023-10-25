@@ -1,7 +1,7 @@
 {
   "name": "livechatwebfm",
   "version": "1.0.0",
-  "description": "Description of your app",
+  "description": "livechatwebfm",
   "main": "updates/node.js",
   "scripts": {
     "start": "node updates/node.js"
